@@ -1,0 +1,29 @@
+
+
+============================== 2023-03-08 12:59:16.931370 | 45fc26a4-f89d-4b84-8f95-25946ad342a4 ==============================
+[0m12:59:16.931370 [info ] [MainThread]: Running with dbt=1.4.1
+[0m12:59:16.932927 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/igalrozen/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_name': 'jaffle_shop', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m12:59:16.933172 [debug] [MainThread]: Tracking: tracking
+[0m12:59:16.953868 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10acd9100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ac96d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ac96a30>]}
+[0m12:59:16.955263 [info ] [MainThread]: Creating dbt configuration folder at /Users/igalrozen/.dbt
+[0m12:59:16.957649 [debug] [MainThread]: Starter project path: /usr/local/Cellar/dbt-postgres/1.4.1/libexec/lib/python3.9/site-packages/dbt/include/starter_project
+[0m12:59:24.492053 [info ] [MainThread]: Profile jaffle_shop written to /Users/igalrozen/.dbt/profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m12:59:24.492510 [info ] [MainThread]: 
+Your new dbt project "jaffle_shop" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m12:59:24.492904 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10985c040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1097ba130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aeee3a0>]}
+[0m12:59:24.493249 [debug] [MainThread]: Flushing usage events
+[0m12:59:24.859456 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
