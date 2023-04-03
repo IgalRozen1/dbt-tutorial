@@ -1,14 +1,14 @@
-with idp_users as (
-    select * from {{ ref('idp_users') }}
+WITH idp_users AS (
+    SELECT * FROM {{ ref('idp_users') }}
 ),
 
-service_users as (
-    select * from {{ ref('service_users') }}
+service_users AS (
+    SELECT * FROM {{ ref('service_users') }}
 ),
 
-idp_service_users as (
-    select distinct idp_users.emails, idp_users.mfa from idp_users
-    join service_users on service_users.emails = idp_users.emails
+idp_service_users AS (
+    SELECT service_users.name, service_users.emails, idp_users.mfa FROM service_users
+    LEFT JOIN idp_users ON idp_users.emails = service_users.emails
 )
 
-select * from idp_service_users
+SELECT * FROM idp_service_users
